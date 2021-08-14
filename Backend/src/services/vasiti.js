@@ -15,10 +15,10 @@ class vasiriContoller {
 
         }
         // console.log(`${request.hostname}/upload/${request.images[0].filename}`)
-    console.log({image:request.files})
+    // console.log({image:request.files})
 
 const imageArray = []
-        for(each of request.images ){
+        for(each of request.files ){
             imageArray.push(`${request.hostname}/upload/${each.filename}`)
 
         }

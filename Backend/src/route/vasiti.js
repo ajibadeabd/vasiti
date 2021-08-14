@@ -12,7 +12,7 @@ const {
      } = require('../services/vasiti')
 const resp = require('../middleware/response')
 
-router.post('/product',multerImage[0],multerImage[1], async(request,response)=>{
+router.post('/product',multerImage[0], async(request,response)=>{
 // try{
 
 const data  = await post_product(request,response)

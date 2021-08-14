@@ -3,7 +3,7 @@ const upload = require("./multerConfig");
 async function addPathToBody(req, res, next) {
   if (req.files && req.files.length > 0) {
     if (req.files.length && req.files[0].fieldname === "image") {
-      req.photoURL = req.files;
+      req.images = req.files;
     }
   }
   next();
