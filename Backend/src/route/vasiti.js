@@ -15,7 +15,7 @@ const resp = require('../middleware/response')
 router.post('/product',multerImage[0], async(request,response)=>{
 // try{
 
-const data  = await post_product(request,response)
+const data  = await fetch_products(request,response)
 response.status(200).send(resp(" Product Saved", data));
 })
 
